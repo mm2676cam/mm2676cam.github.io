@@ -1,88 +1,111 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafaf8" />
     <title>inference.mm — Matevz Matjasec</title>
-    <meta
-      name="description"
-      content="Matevz Matjasec — AI researcher working on learning dynamics, generalisation, continual learning, and in-context learning."
-    />
+    <meta name="description" content="Matevz Matjasec — AI researcher at the Max Planck Institute for Intelligent Systems, studying optimization, diffusion language models, in-context learning, and machine learning for biology." />
+    <link rel="canonical" href="https://mm2676cam.github.io/" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <main class="wrap">
+    <main class="wrap" id="top">
       <header class="header">
         <div class="brand">inference.mm</div>
         <h1>Matevz Matjasec</h1>
-
-        <p class="line">
-          AI researcher · London, United Kingdom
-        </p>
-
+        <p class="line subtitle">AI Researcher · Max Planck Institute for Intelligent Systems · Tübingen, Germany</p>
         <p class="line links">
           <a href="mailto:mm2676@cantab.ac.uk">mm2676@cantab.ac.uk</a>
           <span class="sep">/</span>
           <a href="mailto:matevz.matjasec@tuebingen.mpg.de">matevz.matjasec@tuebingen.mpg.de</a>
           <span class="sep">/</span>
-          <a href="cv.pdf">CV</a>
+          <a href="cv.pdf">CV (PDF)</a>
         </p>
-
-        <p class="line note">
-          If you’re working in a similar area, or you’re interested in my work, feel free to reach out.
-        </p>
+        <nav class="site-nav" aria-label="On this page">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#talks">Talks &amp; service</a>
+          <a href="#background">Background</a>
+          <a href="#outside-research">Outside research</a>
+        </nav>
       </header>
 
-      <section class="section">
-  <h2>About</h2>
-  <p>
-    I’m an AI researcher at the Max Planck Institute for Intelligent Systems, with a background in physics and computer science from Cambridge. 
-    <br><br>My work focuses on how optimisation, data, and architectural choices interact to shape learning dynamics, generalisation, and long-range behaviour in neural networks. 
-    I am particularly interested in the role of inductive biases in enabling models to move beyond pattern matching toward more structured, scientific reasoning.
-  </p>
-</section>
+      <section class="section about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I am an AI researcher at the <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a>, working with Antonio Orvieto. With a background in physics and computer science, I investigate how optimization dynamics, learning objectives, and architectural inductive biases shape what neural networks learn—and the algorithms they develop internally.</p>
+        <p>I try to approach these questions mechanistically but holistically, drawing on theory, controlled experiments, and interpretability to understand learning from different perspectives. My broader aim is to understand and develop general, adaptive learning systems, particularly through meta- and in-context learning, diffusion models, iterative refinement and looping, and post-training methods.</p>
+        <p>I also believe that advances in AI should translate into meaningful, positive change. Biology is, to me, one of the most promising yet still underexplored areas for modern machine learning. This motivates my work on genomic language models, sequence-to-function prediction, and generative modelling of single-cell states and responses to genetic perturbations.</p>
+      </section>
 
-<section class="section">
-  <h2>Research interests</h2>
-  <p>
-    Inductive biases, architectures, and data in modern machine learning; learning dynamics and optimisation; generalisation and out-of-distribution robustness; 
-    in-context learning and long-context behaviour; diffusion-based models; natural language processing and genomic language modelling. 
-    <br><br>I am increasingly interested in the design of autonomous research systems—open-ended models capable of reasoning and knowledge generation beyond prompt-driven behaviour—and in how scalable, iterative research processes might be automated to accelerate scientific progress.
-  </p>
-</section>
+      <section class="section" id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research</h2>
+        <div class="research-entry">
+          <h3>Optimization &amp; learning dynamics</h3>
+          <p>How does optimizer update geometry change the computational strategies a model learns? I study optimizer-dependent inductive biases, memory strategies, training dynamics, and the relationship between optimization and generalization.</p>
+        </div>
+        <div class="research-entry">
+          <h3>Diffusion, inference &amp; adaptive learning</h3>
+          <p>I investigate objective factorization and conditional inference in diffusion language models, alongside iterative refinement, looping, and semantic diffusion. Related interests include post-training methods, test-time training, and learning to adapt from context.</p>
+        </div>
+        <div class="research-entry">
+          <h3>Machine learning for biology</h3>
+          <p>I study how genomic language models can learn transferable representations of DNA and predict regulatory function, alongside generative models of single-cell expression and responses to genetic perturbations. I am interested in making these representations more predictive, transferable across biological contexts, and useful for scientific discovery.</p>
+        </div>
+        <p class="secondary-interest">Further interests include linear models and long-context modelling, graph neural network oversmoothing, and its connections to reservoir computing.</p>
+      </section>
 
-      <section class="section">
-        <h2>Current roles</h2>
-        <ul>
-          <li><strong>AI Researcher</strong> — Max Planck Institute for Intelligent Systems (2025–present)</li>
-          <li><strong>ML &amp; AI Advisor</strong> — Alpdev (Oct 2025–present)</li>
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <ol class="papers">
+          <li>
+            <strong>Optimizers Select Algorithms: Update Geometry Controls Memory Strategy in Associative Recall.</strong>
+            <span class="meta">First author · NeurIPS 2026 <a href="https://opt-ml.org/">OPT Workshop</a> · Accepted</span>
+          </li>
+          <li>
+            <strong>Conditional Inference Mismatch in Structured Diffusion Language Models.</strong>
+            <span class="meta">First author · ICML 2026 <a href="https://spigmworkshop2026.github.io/papers/">SPIGM Workshop</a></span>
+          </li>
+        </ol>
+        <p class="section-note">Additional work on diffusion language models, single-cell modelling, and associative recall is ongoing. I will share further details when the manuscripts are public.</p>
+      </section>
+
+      <section class="section" id="talks" aria-labelledby="talks-title">
+        <h2 id="talks-title">Talks &amp; academic activities</h2>
+        <ul class="activity-list">
+          <li><span class="date">11 Dec 2026 · Upcoming</span><div><strong>NeurIPS OPT Workshop, Sydney.</strong> Presenting my accepted workshop paper on optimizer update geometry and memory strategies in associative recall.</div></li>
+          <li><span class="date">21 Aug 2026</span><div><strong><a href="https://fridaytalks.github.io/">MPI-IS FridayTalks, Tübingen.</a></strong> Presented “Causal Inductive Biases for In-Context Learning in Diffusion Language Models.”</div></li>
+          <li><span class="date">9 Aug 2026</span><div><strong><a href="https://psi.petnica.rs/2026_ml/schedule">Petnica Summer Institute (ML-SCI).</a></strong> Talk on genomic language models, sequence-to-function modelling, and training objectives for undergraduate and graduate students; organized a student workshop project.</div></li>
+          <li><span class="date">2026</span><div><strong><a href="https://fridaytalks.github.io/#call">FridayTalks, Tübingen — Organizing committee.</a></strong> Coordinating talks and cross-group research exchanges across the local AI community.</div></li>
+          <li><span class="date">May 2026</span><div><strong>Cold Spring Harbor Laboratory.</strong> Attended the 90th Symposium on Quantitative Biology, “AI in Biology.”</div></li>
         </ul>
       </section>
 
-      <section class="section">
-        <h2>Education</h2>
-        <ul>
-          <li>MPhil Advanced Computer Science — University of Cambridge (2022–2023)</li>
-          <li>BSc Physics (First Class Honours) — King’s College London (2019–2022)</li>
+      <section class="section" id="background" aria-labelledby="background-title">
+        <h2 id="background-title">Background</h2>
+        <ul class="background-list">
+          <li><span><strong>AI Researcher</strong> · Max Planck Institute for Intelligent Systems</span><span class="years">2026–present</span></li>
+          <li><span><strong>ML &amp; AI Advisor</strong> · Alpdev</span><span class="years">2025–present</span></li>
+          <li><span><strong>MPhil, Advanced Computer Science</strong> · University of Cambridge</span><span class="years">2022–2023</span></li>
+          <li><span><strong>BSc, Physics (First Class Honours)</strong> · King’s College London</span><span class="years">2019–2022</span></li>
         </ul>
+        <p class="section-note">Selected distinctions include the Ad Futura, Rotary Club Ljubljana, and Ljubljana scholarships, the Princeton Physics of Life Summer School, and participation in the International Theoretical Physics Olympiad.</p>
       </section>
 
-      <section class="section">
-        <h2>Interests</h2>
-        <p>
-          Walking in nature, skiing, sailing, hiking, jazz, opera, history, philosophy, politics.
-        </p>
+      <section class="section" id="outside-research" aria-labelledby="outside-title">
+        <h2 id="outside-title">Outside research</h2>
+        <p>Music is perhaps my greatest passion. If a conference is near an opera house, there's a good chance you'll find me there. I'm also endlessly curious about history, politics and economics, and remain particularly fond of physics—the mother of the sciences, as far as I'm concerned.</p>
+        <p>I'm most at home in the mountains, whether hiking, ski touring or trail running. Otherwise, you might find me gliding over Tübingen, cycling, or sailing towards Venice. I'm exploring foiling and the 69F class, and would love to connect with anyone interested in long-distance crossings or competitive sailing.</p>
       </section>
 
-      <footer class="footer">
-        <span>© <span id="year"></span> Matevz Matjasec</span>
-      </footer>
+      <section class="section contact-section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Get in touch</h2>
+        <p>I'm always looking for new challenges and enjoy meeting curious people from different fields. Whether you're interested in my research, have an idea to discuss, or share an enthusiasm for sailing, I'd be happy to hear from you. I'll be at <a href="https://neurips.cc/Conferences/2026">NeurIPS in Sydney, 6–12 December 2026</a> if you'd like to meet in person.</p>
+        <p><a href="mailto:mm2676@cantab.ac.uk">mm2676@cantab.ac.uk</a></p>
+      </section>
+
+      <footer class="footer"><span>© <span id="year">2026</span> Matevz Matjasec</span><a href="#top">Back to top ↑</a></footer>
     </main>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
